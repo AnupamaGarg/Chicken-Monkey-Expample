@@ -4,15 +4,17 @@
 var count = 0;
 for(let i = 0; i <= 100; i++){
      var currentNumber = count += 1;
-    if (currentNumber % 5 === 0){
+
+     if(currentNumber % 5 === 0 && currentNumber % 7 === 0){
+        console.log("chickenMonkey!");
+    }
+     else if (currentNumber % 5 === 0){
         console.log("chicken");
     }
     else if(currentNumber % 7 === 0){
         console.log("monkey");
     }
-    else if(currentNumber % 5 === 0 && currentNumber % 7 === 0){
-        console.log("chickenMonkey!");
-    }
+    
     else {
         console.log(currentNumber);
     }
